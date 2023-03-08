@@ -441,10 +441,19 @@
         opacity: 0.8;
       }
 
-      #text-click {
-        font-family: "Inter", sans-serif;
-        font-family: "Poppins", sans-serif;
-        
+      .text-click {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        max-width: 300px;
+        height: 48px ;
+        position: absolute;
+          color: indianred;
+          top: 80%;
+          padding: 4px 8px;
+          border: 1px solid #c82b60;
+          border-radius: 6px;
+          cursor: pointer;
       }
 
       @media only screen and (min-width: 1028px) {
@@ -453,10 +462,14 @@
           max-width: 350px !important;
         }
 
-        #text-click {
-            font-size: 20px;
-            max-width: 300px;
-            height: 48px;
+        .text-click {
+          font-family: "Inter", sans-serif;
+          font-family: "Poppins", sans-serif;
+          /* display: none; */
+          max-width: 500px!important;
+          font-weight: bold!important;
+          font-size: 36px;
+          
         }
       }
 
@@ -844,23 +857,7 @@
         color: indianred;
         font-size: 46px;
         top: 80%;">🐙 Click here 🐙</p> -->
-      <div
-        id="text-click"
-        style="
-          display: none;
-          position: absolute;
-          font-family: fantasy;
-          color: indianred;
-          font-size: 36px;
-          top: 80%;
-          padding: 4px 8px;
-          border: 1px solid #c82b60;
-          border-radius: 6px;
-          cursor: pointer;
-        "
-      >
-        🐙 Octopus here 🐙
-      </div>
+      <div class="text-click">🐙 Octopus here 🐙</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
